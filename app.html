@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+    <table align="center" border="1" width="50%" cellspacing="1">
+        <tbody>
+            <tr>
+                <td>
+                    <table align="center" width="80%" cellspacing="1">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h1 align="center">Application Form</h1><br>
+                                    <form>
+                                        <strong>First Name :  </strong><input type="text" name="txtUsername"> <strong>Last Name :  </strong><input type="text" name="txtUsername"> <br><br>
+                                        <strong>Date of Birth : </strong><input type="date" name="date" placeholder="mm / dd / yyyy" maxlength="14"> <strong>Age :  </strong><select>
+                                            <option value="0-18">0-18</option>
+                                            <option value="19-28">18-28</option>
+                                            <option value="29-45">29-45</option>
+                                            <option value=">45">>45</option>
+                                        </select><br><br>
+                                        <strong>Gender : </strong><select>
+                                            <option value="M">Male</option>
+                                            <option value="F">Female</option>
+                                            <option value="Others">Others</option>
+                                        </select> <strong>Email Address :  </strong><input type="text" name="txtEmail" placeholder="eg: abc123@gmail.com"><br><br>
+                                        </form>
+                                        <form action="validate.php">
+                                            <strong>Positions Available: </strong>
+                                            <input type="radio" value="r" name="rdPosition"><lablel>Junior Developer</lablel>   
+                                            <input type="radio" value="y" name="rdPosition"><label>Mid-level Developer</label>
+                                            <input type="radio" value="s" name="rdPosition"><label>Senior Developer</label>
+                                            <br><br>
+                                        </form>
+
+                                        <form>
+                                            <strong>Programming Languages :  </strong>
+                                            <input type="checkbox" name="chkLang" value="java">Java
+                                            <input type="checkbox" name="chkLang" value="js">JavaScript
+                                            <input type="checkbox" name="chkLang" value="python">Python
+                                            <br><br>
+                                        </form>
+
+                                        <form>
+                                            <strong>Password : </strong>
+                                            <input type="text" name="userPassword" placeholder="Password">
+                                            <strong>Confirm Password : </strong>
+                                            <input type="text" name="userPassword" placeholder="Confirm Password"><br><br><br>
+                                            <input type="submit">  <input type="reset">
+                                        <br><br><br>
+                                        </form>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
